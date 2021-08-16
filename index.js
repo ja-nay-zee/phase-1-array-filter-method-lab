@@ -1,21 +1,17 @@
 
 //////////////////// SOLUTION ON GITHUB ///////////////
-// function findMatching(source, sought) {
-//     return source.filter( possibleMatch =>
-//       possibleMatch.toLowerCase() === sought.toLowerCase()
-//     )
-//   }
-// // const findMatching = drivers.filter(drivers => drivers.length 
-//     === 'Bobby', 'Sammy');
-
-// console.log(findMatching);
+function findMatching(source, sought) {
+    return source.filter( possibleMatch =>
+      possibleMatch.toLowerCase() === sought.toLowerCase()
+    )
+  }
 
 
 //// why use .toLowerCase()???
-function findMatching(drivers, string) {
-    return drivers.filter(function(y) {
-        return y.toLowerCase().indexOf(string.toLowerCase()) !== -1})
-}
+// function findMatching(drivers, string) {
+//     return drivers.filter(function(y) {
+//         return y.toLowerCase().indexOf(string.toLowerCase())})
+// }
 
 ////////// DON'T HAVE TO CONSOLE.LOG() //////////////
 // console.log(findMatching(drivers, 'Bobby'));
